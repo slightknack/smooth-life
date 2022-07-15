@@ -1,4 +1,4 @@
-(let rainbow (shader-rec "shader" 1024 1024))
-(let color (shader-rec "color" 1024 1024 rainbow))
-;; (let sized (shader "copy" 256 256 rainbow))
-(output color)
+(let rainbow (shader-rec "shader" 512 512))
+; (let color (shader-rec "color" 512 512 rainbow))
+; (let sized (shader "copy" 512 512 rainbow))
+(output rainbow)

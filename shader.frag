@@ -55,15 +55,14 @@ void main() {
         return;
     }
 
-    float z = sin(u_time * 0.1);
-    float w = z*0.5+0.5;
+    float w = 0.98;
 
     float update = step_gol(coords);
     float old = is_alive(coords);
     float new = old * (1-w) + update * w;
     // float new = update;
 
-    new = old * 0.6 + update * 0.4;
+    // new = old * 0.6 + update * 0.4;
 
     // if (abs(w - 0.5) < 0.05) {
     //     color = vec4(vec3(old > 0.5), 1.);
